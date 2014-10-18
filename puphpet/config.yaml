@@ -8,11 +8,20 @@ vagrantfile-local:
         cpus: '2'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.2.256
+            private_network: 192.168.56.101
             forwarded_port:
                 J73ejc0txYYZ:
                     host: '5311'
                     guest: '22'
+                wsk7GXPhE3Mn:
+                    host: '9001'
+                    guest: '80'
+                4tNsXqhCokUO:
+                    host: '9002'
+                    guest: '9002'
+                fk83GcKuMDhM:
+                    host: '9003'
+                    guest: '9003'
         post_up_message: ''
         provider:
             virtualbox:
@@ -61,11 +70,13 @@ vagrantfile-local:
         host: detect
 server:
     install: '1'
-    packages:
-        - vim
-        - htop
-        - apt
-        - cron
+    server:
+    packages: 
+    - cron 
+    dot_files:
+        -
+            bash_aliases: null
+    _prevent_empty: ''
 firewall:
     install: '1'
     rules: null
@@ -79,16 +90,15 @@ apache:
         manage_group: false
         sendfile: 0
     modules:
+        - php
         - rewrite
         - cache
         - vhost_alias
     vhosts:
-        NQ575D9OBnVj:
-            servername: development.local
-            serveraliases:
-                - www.development.local
-            docroot: /var/www/development
-            port: '80'
+        F0LfNSc9LwRa:
+            servername: myapp.local
+            docroot: /var/www/public
+            port: '9002'
             setenv:
                 - 'APP_ENV dev'
             override:
@@ -97,36 +107,19 @@ apache:
                 - Indexes
                 - FollowSymLinks
                 - MultiViews
-            engine: php
             custom_fragment: ''
             ssl_cert: ''
             ssl_key: ''
             ssl_chain: ''
             ssl_certs_dir: ''
-    mod_pagespeed: '1'
+    mod_pagespeed: 0
+    mod_spdy: 0
 nginx:
     install: '0'
     settings:
         default_vhost: 1
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
-    vhosts:
-        MLYErFrFDusM:
-            server_name: awesome.dev
-            server_aliases:
-                - www.awesome.dev
-            www_root: /var/www/awesome
-            listen_port: '80'
-            location: \.php$
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            envvars:
-                - 'APP_ENV dev'
-            engine: php
-            ssl_cert: ''
-            ssl_key: ''
 php:
     install: '1'
     version: '56'
@@ -144,10 +137,7 @@ php:
             - cgi
         pear:
             - MDB2_Driver_mysqli
-            - SQL_Parser
-            - Calendar
             - File_CSV_DataSource
-            - File_Sitemap
             - VersionControl_Git
         pecl:
             - pecl_http
@@ -170,7 +160,7 @@ hhvm:
         error_reporting: '-1'
     timezone: null
 xdebug:
-    install: '1'
+    install: '0'
     settings:
         xdebug.default_enable: '1'
         xdebug.remote_autostart: '0'
