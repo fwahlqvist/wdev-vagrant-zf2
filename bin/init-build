@@ -1,9 +1,11 @@
 #!/bin/bash
 cd /var/www/
 
-php composer.phar create-project phpmyadmin/phpmyadmin /phpmyadmin STABLE
-
 echo "Running composer ..."
+curl -s https://getcomposer.org/installer | php --
 composer install
+composer self-update
+composer update
 
-apt-get install phpmyadmin
+echo "Installing phpmyadmin ..."
+git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin                                                         
