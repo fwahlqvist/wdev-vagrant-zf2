@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /var/www/
+
+php composer.phar create-project phpmyadmin/phpmyadmin /phpmyadmin STABLE
+
+echo "Running composer ..."
+composer install
+
+apt-get install phpmyadmin
