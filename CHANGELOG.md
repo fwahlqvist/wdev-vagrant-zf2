@@ -11,4 +11,10 @@
     - MogoDB
 
 ## V0.2
+- Backend administrations for DB
+    - phpmyadmin for MySql
+    - phpMoAdmin for MongoDB
+
+## v0.3
+- 
     
