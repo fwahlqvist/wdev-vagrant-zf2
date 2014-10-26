@@ -222,8 +222,8 @@ ruby:
         5VtAqpGJskeJ:
             version: ''
 nodejs:
-    install: '0'
-    npm_packages: {  }
+    install: '1'
+    npm_packages: {grunt, angular, angular-bootstrap }
 python:
     install: '1'
     packages: {  }
