@@ -1,0 +1,8 @@
+/nbproject/private/
+/.vagrant
+/phpmyadmin
+/phpmoadmin
+/public/vendor/
+/public/build/
+/public/data/
+composer.phar
