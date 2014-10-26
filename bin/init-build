@@ -7,5 +7,8 @@ composer install
 composer self-update
 composer update
 
-echo "Installing phpmyadmin ..."
-git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin                                                         
+echo "Installing phpMyAdmin ..."
+git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin    
+
+echo "Installing phpMoAdmin ..."
+git clone https://github.com/elmerfud/phpMoAdmin-MongoDB-Admin  /var/www/phpmoadmin                                                           
