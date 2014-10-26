@@ -11,4 +11,13 @@ echo "Installing phpMyAdmin ..."
 git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin    
 
 echo "Installing phpMoAdmin ..."
-git clone https://github.com/elmerfud/phpMoAdmin-MongoDB-Admin  /var/www/phpmoadmin                                                           
+git clone https://github.com/elmerfud/phpMoAdmin-MongoDB-Admin  /var/www/phpmoadmin                   
+
+echo "Running npm ..."
+npm install
+
+echo "Running bower ..."
+bower install
+
+echo "Running compass ..."
+compass compile                                        
