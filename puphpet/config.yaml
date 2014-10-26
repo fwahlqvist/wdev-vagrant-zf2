@@ -25,6 +25,9 @@ vagrantfile-local:
                 fk8FWEfuMDhM:
                     host: '9004'
                     guest: '9004'
+                fk8FwefwDhM:
+                    host: '9005'
+                    guest: '9005'    
         post_up_message: ''
         provider:
             virtualbox:
@@ -120,6 +123,24 @@ apache:
             servername: phpmyadmin.local
             docroot: /var/www/phpmyadmin
             port: '9004'
+            engine: 'php'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        fgFHFsgfdsGF:
+            servername: phpmoadmin.local
+            docroot: /var/www/phpmoadmin
+            port: '9005'
             engine: 'php'
             setenv:
                 - 'APP_ENV dev'
