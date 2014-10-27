@@ -223,7 +223,7 @@ ruby:
             version: ''
 nodejs:
     install: '1'
-    npm_packages: {grunt, angular, angular-bootstrap }
+    npm_packages: { }
 python:
     install: '1'
     packages: {  }
