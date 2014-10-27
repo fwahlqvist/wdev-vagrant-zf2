@@ -1,11 +1,12 @@
 {
   "name": "wdev-vagrant-zf2",
   "version": "0.3.0",
+  "private": true,
   "description": "",
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.3.12",
-    "grunt": "^0.4.6",
+    "grunt": "^0.4.5",
     "grunt-bower-requirejs": "^1.1.0",
     "grunt-contrib-requirejs": "^0.4.4",
     "load-grunt-tasks": "^01.0.0",
