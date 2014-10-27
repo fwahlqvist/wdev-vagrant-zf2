@@ -5,4 +5,5 @@
 /public/vendor/
 /public/build/
 /public/data/
+/node_modules/
 composer.phar
