@@ -1,12 +1,6 @@
 #!/bin/bash
 cd /var/www/
 
-echo "Running composer ..."
-curl -s https://getcomposer.org/installer | php --
-composer install
-composer self-update
-composer update
-
 echo "Installing phpMyAdmin ..."
 git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin    
 
@@ -20,6 +14,11 @@ npm update
 echo "Running bower ..."
 bower install
 bower update
+
+echo "Running composer ..."
+composer install
+composer self-update
+composer update
 
 echo "Running compass ..."
 compass compile                                        
