@@ -16,9 +16,17 @@ bower install
 bower update
 
 echo "Running composer ..."
-composer install
-composer self-update
-composer update
+sudo composer install
+sudo composer self-update
+sudo composer update
+
+cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/config/. /var/www/config/
+cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/data/cache/. /var/www/data/cache/
+cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/module/. /var/www/module/
+cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/public/. /var/www/public/
+cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/LICENSE.txt /var/www/LICENSE.txt
+
+
 
 echo "Running compass ..."
 compass compile                                        
