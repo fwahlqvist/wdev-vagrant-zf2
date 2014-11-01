@@ -1,1 +1,26 @@
-{}
+{
+    "config": {
+    	"process-timeout": 5000
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev",
+            "dev-develop": "1.1-dev"
+        }
+    },
+    "require": {
+        "php": ">=5.3.23",
+        "zfcampus/zf-apigility-skeleton": "*",
+        "zendframework/zendframework": ">=2.3.2,<3.0.0",
+        "zfcampus/zf-apigility": "~1.0",
+        "zfcampus/zf-apigility-documentation": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
+    },
+    "require-dev": {
+        "zendframework/zftool": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master",
+        "zfcampus/zf-apigility-admin": "~1.0",
+        "zfcampus/zf-apigility-welcome": "~1.0",
+        "zfcampus/zf-deploy": "~1.0"
+    }
+}
