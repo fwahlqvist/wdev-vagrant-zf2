@@ -32,4 +32,16 @@
             "bootstrap-sass-official": "~3.2.0",
             "requirejs": "~2.1.15",
             "angular-bootstrap": "~0.11.2"
+
+## v0.4
+- ZendFramework 2 and tools and related dependencies
+    - ZendFramework 2
+    - Doctorine
+    - Doctorine / MongoDB
+    - Apiglity Skeleton
+    - ZfcUser // Defalt configuration
+    - Hybridauth 
+    - Scn-Social-Auth // Dummy facebook configuration
+
+
     
