@@ -10,6 +10,12 @@
     },
     "require": {
         "php": ">=5.3.23",
+        "socalnick/scn-social-auth": "*",
+        "hybridauth/hybridauth": "dev-master",
+        "jhuet/scn-social-auth-doctrine-mongo-odm": "dev-master",
+        "doctrine/doctrine-module": "0.8.*",
+        "doctrine/mongodb-odm": "dev-master",
+        "zf-commons/zfc-user-doctrine-mongo-odm": "dev-master",
         "zfcampus/zf-apigility-skeleton": "*",
         "zendframework/zendframework": ">=2.3.2,<3.0.0",
         "zfcampus/zf-apigility": "~1.0",
