@@ -31,8 +31,8 @@ cp -avr /var/www/vendor/zfcampus/zf-apigility-skeleton/LICENSE.txt /var/www/LICE
 cp -avr /var/www/dist/IndexController.php.dist /var/www/module/Application/src/Application/Controller/IndexController.php
 cp -avr /var/www/dist/application.config.php.dist /var/www/config/application.config.php
 cp -avr /var/www/dist/session.local.php.dist /var/www/config/autoload/session.local.php
-cp -avr /var/www/dist/scn-social-auth-global.php.dist /var/www/config//scn-social-auth-global.php
-cp -avr /var/www/dist/scn-social-auth-local.php.dist /var/www/config//scn-social-auth-local.php
+cp -avr /var/www/dist/scn-social-auth.global.php.dist /var/www/config//scn-social-auth.global.php
+cp -avr /var/www/dist/scn-social-auth.local.php.dist /var/www/config//scn-social-auth.local.php
 
 echo "Running compass ..."
 compass compile                                        
