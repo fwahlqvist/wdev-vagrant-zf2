@@ -10,6 +10,9 @@ vagrantfile-local:
         network:
             private_network: 192.168.56.101
             forwarded_port:
+                J1S41CprJmha:
+                    host: '8080'
+                    guest: '80'
                 J73ejc0txYYZ:
                     host: '5311'
                     guest: '22'
@@ -103,8 +106,10 @@ apache:
     vhosts:
         F0LfNSc9LwRa:
             servername: myapp.local
+            serveraliases:
+                - www.myapp.local
             docroot: /var/www/public
-            port: '9002'
+            port: '80'
             engine: 'php'
             setenv:
                 - 'APP_ENV dev'
@@ -121,8 +126,10 @@ apache:
             ssl_certs_dir: ''
         fgFDGsgfdsGF:
             servername: phpmyadmin.local
+            serveraliases:
+                - www.phpmyadmin.local
             docroot: /var/www/phpmyadmin
-            port: '9004'
+            port: '80'
             engine: 'php'
             setenv:
                 - 'APP_ENV dev'
@@ -139,8 +146,10 @@ apache:
             ssl_certs_dir: ''
         fgFHFsgfdsGF:
             servername: phpmoadmin.local
+            serveraliases:
+                - www.phpmoadmin.local
             docroot: /var/www/phpmoadmin
-            port: '9005'
+            port: '80'
             engine: 'php'
             setenv:
                 - 'APP_ENV dev'
