@@ -3,6 +3,16 @@ wdev-vagrant-zf2
 
 Vagrant, ZF2, Apigility and Angular.
 
+ ## Dependencies
+
+1) Virtual box
+    Got to https://www.virtualbox.org and download and install your machine
+2) Hostmanager
+    This is needed for the DNS resolutions for virtual hosts.
+    To install open command prompt and type
+        "vagrant plugin install vagrant-hostmanager"
+        
+
 
  ## Instalation
 
@@ -15,8 +25,11 @@ Vagrant, ZF2, Apigility and Angular.
 Go grab a coffee....
 
 To access box use 
-http://192.168.56.101:9003
+http://myapp.local
 
 To access phpmyadmin use
-http://192.168.56.101:9004
+http://phpmyadmin.local
+
+To access phpmoadmin use
+http://phpmoadmin.local
 
