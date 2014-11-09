@@ -43,5 +43,8 @@
     - Hybridauth 
     - Scn-Social-Auth // Dummy facebook configuration
 
-
-    
+## v0.5
+- Updated ports for vhost, HostManager plugin is now a dependency (https://github.com/smdahlen/vagrant-hostmanager)
+    - myapp.local (www.myapp.local) for main application
+    - phpmyadmin.local (www.phpmyadmin.local) for phpMyAdmin interface for mySql
+    - phpmoadmin.local (www.phpmoadmin.local) for phpMoAdmin interface for Mongo, this inlcudes coping over the .htaccess file
