@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /var/www/
+
+echo "Installing phpMyAdmin ..."
+git clone https://github.com/phpmyadmin/phpmyadmin  /var/www/phpmyadmin    
+
+echo "Installing phpMoAdmin ..."
+git clone https://github.com/elmerfud/phpMoAdmin-MongoDB-Admin  /var/www/phpmoadmin     
+
+# Copy dist .htaccess file to folder
+cp -avr /var/www/dist/htaccess.dist /var/www/phpmoadmin/.htaccess
+    
