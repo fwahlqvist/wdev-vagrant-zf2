@@ -48,3 +48,11 @@
     - myapp.local (www.myapp.local) for main application
     - phpmyadmin.local (www.phpmyadmin.local) for phpMyAdmin interface for mySql
     - phpmoadmin.local (www.phpmoadmin.local) for phpMoAdmin interface for Mongo, this inlcudes coping over the .htaccess file
+
+## v0.6
+- Updated installation instructions and builds
+
+
+## v0.7
+ - Added Swagger format for API documentation
+    - T o access documentation use http://myapp.local/apigility/swagger
