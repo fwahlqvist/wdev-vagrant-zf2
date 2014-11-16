@@ -39,7 +39,7 @@
     - Doctorine
     - Doctorine / MongoDB
     - Apiglity Skeleton
-    - ZfcUser // Defalt configuration
+    - ZfcUser // Default configuration
     - Hybridauth 
     - Scn-Social-Auth // Dummy facebook configuration
 
@@ -55,4 +55,8 @@
 
 ## v0.7
  - Added Swagger format for API documentation
-    - T o access documentation use http://myapp.local/apigility/swagger
+    - To access documentation use http://myapp.local/apigility/swagger
+
+## v0.8
+ - Doctrine default config added 
+ - 'Soflomo\Sitemap', added, to reach sitemap go to http://myapp.local/sitemap
