@@ -28,6 +28,10 @@ cp -avr /var/www/dist/session.local.php.dist /var/www/config/autoload/session.lo
 cp -avr /var/www/dist/scn-social-auth.global.php.dist /var/www/config/autoload/scn-social-auth.global.php
 cp -avr /var/www/dist/scn-social-auth.local.php.dist /var/www/config/autoload/scn-social-auth.local.php
 cp -avr /var/www/dist/doctrine.local.php.dist /var/www/config/autoload/doctrine.local.php
+cp -avr /var/www/dist/local.php.dist /var/www/config/autoload/local.php
+cp -avr /var/www/dist/global.php.dist /var/www/config/autoload/global.php
 
 echo "Running compass ..."
-compass compile                                        
+compass compile             
+
+mongo localhost:27017/doctrine /var/www/dist/data/mongo.js                           
