@@ -48,3 +48,13 @@
     - myapp.local (www.myapp.local) for main application
     - phpmyadmin.local (www.phpmyadmin.local) for phpMyAdmin interface for mySql
     - phpmoadmin.local (www.phpmoadmin.local) for phpMoAdmin interface for Mongo, this inlcudes coping over the .htaccess file
+
+## v0.6 Doctrine 
+
+
+## v0.7 Admin interface
+
+## v0.8 Sitemap
+
+
+## v0.9 Cleanup of files
