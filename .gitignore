@@ -1,15 +1,15 @@
-/nbproject/private/
+/nbproject/private/*
 /.vagrant
-/phpmyadmin
-/phpmoadmin
-/public/vendor/
-/public/build/
-/public/data/
-/node_modules/
+/phpmyadmin/*
+/phpmoadmin/*
+/public/vendor/*
+/public/build/*
+/public/data/*
+/node_modules/*
 composer.phar
-/vendor/
-/bower_components
-/puphpet/files/
-/puphpet/puppet/
-/puphpet/shell/
+/vendor/*
+/bower_components/*
+/puphpet/files/*
+/puphpet/puppet/*
+/puphpet/shell/*
 
