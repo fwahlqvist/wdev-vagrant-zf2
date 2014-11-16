@@ -22,7 +22,8 @@
         "zfcampus/zf-apigility-documentation": "~1.0",
         "zfcampus/zf-development-mode": "~2.0",
         "zfcampus/zf-apigility-documentation-swagger": "~1.0-dev",
-        "soflomo/sitemap": "dev-master"
+        "soflomo/sitemap": "dev-master",
+        "zf-commons/zfc-admin": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
