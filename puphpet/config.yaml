@@ -276,7 +276,11 @@ mongodb:
     settings:
         auth: 1
         port: '27017'
-    databases: {  }
+    databases:
+        sJsqWU6pa0je:
+            name: doctrine
+            user: fredrik
+            password: '1234'
 redis:
     install: '0'
     settings:
