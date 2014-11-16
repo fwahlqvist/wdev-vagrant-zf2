@@ -54,7 +54,12 @@
 
 ## v0.7 Admin interface
 
-## v0.8 Sitemap
+## v0.8 Sitemap 
 
 
 ## v0.9 Cleanup of files
+
+
+## v0.10 OAuth 2.0
+    Default implementation of OAUTH 2.0 to test use the follwing URL's
+       
