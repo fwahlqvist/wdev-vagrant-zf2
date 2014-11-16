@@ -1,0 +1,14 @@
+<?php
+return array(
+    'zf-oauth2' => array(
+        'allow_implicit' => true,
+        'storage' => 'ZF\\OAuth2\\Adapter\\MongoAdapter',
+        'mongo' => array(
+            'dsn_type' => 'Mongo',
+            'dsn' => 'mongodb://localhost:27017',
+            'username' => null,
+            'password' => null,
+            'database' => 'doctrine',
+        ),
+    ),
+);
