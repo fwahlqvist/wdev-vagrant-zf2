@@ -12,6 +12,7 @@ return array(
         'ScnSocialAuthDoctrineMongoODM',
         'ZfcBase',
         'ZfcUser',
+        'Soflomo\Sitemap',
         'DoctrineModule',
         'DoctrineMongoODMModule',
         'ZfcUserDoctrineMongoODM',
