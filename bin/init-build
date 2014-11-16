@@ -27,6 +27,7 @@ cp -avr /var/www/dist/application.config.php.dist /var/www/config/application.co
 cp -avr /var/www/dist/session.local.php.dist /var/www/config/autoload/session.local.php
 cp -avr /var/www/dist/scn-social-auth.global.php.dist /var/www/config/autoload/scn-social-auth.global.php
 cp -avr /var/www/dist/scn-social-auth.local.php.dist /var/www/config/autoload/scn-social-auth.local.php
+cp -avr /var/www/dist/doctrine.local.php.dist /var/www/config/autoload/doctrine.local.php
 
 echo "Running compass ..."
 compass compile                                        
