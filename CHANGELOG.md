@@ -59,4 +59,7 @@
 
 ## v0.8
  - Doctrine default config added 
- - 'Soflomo\Sitemap', added, to reach sitemap go to http://myapp.local/sitemap
+ - 'Soflomo\Sitemap', added, to access sitemap go to http://myapp.local/sitemap
+ - 'zf-commons/zfc-admin' added to access go to http://myapp.local/admin
+
+
