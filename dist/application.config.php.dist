@@ -13,6 +13,7 @@ return array(
         'ZfcBase',
         'ZfcUser',
         'Soflomo\Sitemap',
+        'ZfcAdmin',
         'DoctrineModule',
         'DoctrineMongoODMModule',
         'ZfcUserDoctrineMongoODM',
