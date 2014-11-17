@@ -12,6 +12,7 @@ return array(
         'ScnSocialAuthDoctrineMongoODM',
         'ZfcBase',
         'ZfcUser',
+        'ZfcAdmin',
         'DoctrineModule',
         'DoctrineMongoODMModule',
         'ZfcUserDoctrineMongoODM',
